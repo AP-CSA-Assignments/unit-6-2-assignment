@@ -4,18 +4,23 @@ public class Main
 {
   public static void main(String[] args)
   {
-    // Problem 1 - Create a scanner and an array of size 3
+    // Problem 1
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter array length");
+    int len = sc.nextInt();
 
-    // Problem 2
-    // Use the scanner to get user input and give it to the method
-
-    int N = /* scan.nextInt() */;
-    int[] output = sumsOfNums(N);
+    int[] arr = new int[len];
+    System.out.println("Enter values");
+    for (int i = 0; i < len; i++)
+    {
+      arr[i] = sc.nextInt();
+    }
+    System.out.println("Contains negative: " + containsNeg(arr));
   }
 
-  public static int[] sumsOfNums(int input)
+  public static boolean containsNeg(int[] array)
   {
-    // Implement Problem 2 here
+    // Implement Problem 1 here
     return 0;
   }
 }
