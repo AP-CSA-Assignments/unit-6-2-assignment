@@ -1,4 +1,4 @@
-# unit-6-1-assignment
+# unit-6-2-assignment
 
 ## Git Config
 ```
@@ -22,19 +22,80 @@ After you compile the shape classes, you only need to compile and run `Main.java
 
 # Instructions  
 
-## Problem 1
-Write a program that creates an array of doubles of size 3, and fills it with 3 values that have been inputted by the user.  Print the contents of the array in order, and then print the sum of the array.
+Within the `Main` class, create the following methods (remember that they must be static in order to be used with `main`).
 
-No loops are required; simply index the array.
+## Problem 1
+Write a method called `containsNeg` that takes in an array of doubles as parameter, and returns true if the array contains a negative element, and false otherwise.  Test your method in `main`.
+
+```
+Enter array length:
+4
+Enter values:
+1.1
+2.2
+3.3
+-4.4
+Contains negative: true
+
+Enter array length:
+3
+Enter values:
+1.1
+2.2
+3.3
+Contains negative: false
+```
 
 ## Problem 2
-Write code that asks the user for a positive number, N, and fills an array with the sums of the first n numbers up to N.  For example, if the user enters `N = 5`, then I should have an array with elements
+Write a method called `numDivisibleBy3` which takes an array of integers as parameter, and returns the number of elements that are divisible by 3.
+
 ```
-{0, 1, 3, 6, 10}
+Enter array length:
+5
+Enter values:
+3
+6
+3
+1
+2
+Number divisible by three: 3
+
+Enter array length:
+5
+Enter values:
+1
+2
+4
+5
+7
+Number divisible by three: 0
 ```
-since
-* 0 = 0
-* 0 + 1 = 1
-* 0 + 1 + 2 = 3
-* 0 + 1 + 2 + 3 = 6
-* 0 + 1 + 2 + 3 + 4 = 10
+
+## Problem 3
+Write a method called `numDivisible` which takes in an array of integers and a number, `num`, as parameters.  The method should return the number of elements in the array that are divisible by `num`.
+
+```
+Enter a value for num:
+2
+Enter array length:
+5
+Enter values:
+1
+2
+3
+4
+5
+Num divisible by 2: 2
+
+Enter a value for num:
+3
+Enter array length:
+5
+Enter values:
+1
+2
+3
+4
+5
+Num divisible by 3: 1
+```
